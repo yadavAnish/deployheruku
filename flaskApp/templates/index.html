@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Frames</title>
+   </head>
+	<div>
+        <h1>Test PREDICTION</h1>
+        <h1>2nd line </h1>
+
+        <form action="{{url_for('predict')}}" method="POST">
+            <input type="text" name="enginesize"/><br>
+            <input type="text" name="cylinders"/><br>
+            <input type="text" name="Fuel"/><br>
+
+            <button type="submit" class="btn">Predict</button>
+        </form>
+
+
+            <br>
+            <br>
+
+
+{{prediction_text}}
+
+
+
+    </div>
+   
+</html>
